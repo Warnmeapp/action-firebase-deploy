@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: "Deploy to Firebase Hosting"
-description: "A GitHub Action to deploy to Firebase Hosting"
+name: "Deploy to Firebase"
+description: "A GitHub Action to deploy to Firebase"
 author: "Jason Miller (https://github.com/developit) and Firebase"
 branding:
   icon: "globe"
@@ -47,6 +47,10 @@ inputs:
       the default target or all targets defined in the .firebaserc will be deployed to.
       Refer to the Hosting docs about [multiple sites](https://firebase.google.com/docs/hosting/multisites)
       for more information about deploy targets."
+    required: false
+  targets:
+    description:
+      "The targets options: functions,firestore,etc."
     required: false
   entryPoint:
     description:

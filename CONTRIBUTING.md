@@ -52,12 +52,12 @@ This project follows
    npm run test
    ```
 
-1. If you've forked the repo and want to watch the action run, add secrets to your forked repo that match the secrets specified in [one of the workflow files](https://github.com/FirebaseExtended/action-hosting-deploy/tree/main/.github/workflows) you want to test, and trigger the workflow in your forked repo (for example, by creating a pr or pushing to the `main` branch)
-1. Once you're confident in your changes, create a pull request against the firebaseextended/action-hosting-deploy repo.
+1. If you've forked the repo and want to watch the action run, add secrets to your forked repo that match the secrets specified in [one of the workflow files](https://github.com/Warnmeapp/action-firebase-deploy/tree/main/.github/workflows) you want to test, and trigger the workflow in your forked repo (for example, by creating a pr or pushing to the `main` branch)
+1. Once you're confident in your changes, create a pull request against the firebaseextended/action-firebase-deploy repo.
 
 ## Publishing a new version
 
-A repo owner can publish a new version of the action by following the instructions [in the GitHub docs](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/publishing-actions-in-github-marketplace#publishing-an-action). Manual releases should follow the convention of our existing releases, like [`v0.4-alpha`](https://github.com/FirebaseExtended/action-hosting-deploy/releases/tag/v0.4-alpha).
+A repo owner can publish a new version of the action by following the instructions [in the GitHub docs](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/publishing-actions-in-github-marketplace#publishing-an-action). Manual releases should follow the convention of our existing releases, like [`v0.4-alpha`](https://github.com/Warnmeapp/action-firebase-deploy/releases/tag/v0.4-alpha).
 
 The current major version is `v0`. We move this tag up to the latest release using the method [recommended by GitHub](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md#user-content-recommendations:~:text=Make%20the%20new%20release%20available%20to%20those%20binding%20to%20the%20major%20version%20tag).
 

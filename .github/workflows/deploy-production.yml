@@ -15,5 +15,5 @@ jobs:
         with:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           channelId: live
-          projectId: action-hosting-deploy-demo
+          projectId: action-firebase-deploy-demo
           entryPoint: "./demo"

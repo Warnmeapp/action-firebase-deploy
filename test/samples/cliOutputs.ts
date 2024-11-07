@@ -12,13 +12,13 @@ export const channelMultiSiteSuccess: ChannelSuccessResult = {
     target1: {
       site: "my-main-hosting-site",
       target: "target1",
-      url: "https://action-hosting-deploy-demo--multisite-test-goqvngto.web.app",
+      url: "https://action-firebase-deploy-demo--multisite-test-goqvngto.web.app",
       expireTime: "2020-10-27T21:32:57.233344586Z",
     },
     target2: {
       site: "my-second-hosting-site",
       target: "target2",
-      url: "https://action-hosting-deploy-demo-2--multisite-test-ksadajci.web.app",
+      url: "https://action-firebase-deploy-demo-2--multisite-test-ksadajci.web.app",
       expireTime: "2020-10-27T21:32:57.233344586Z",
     },
   },
@@ -27,9 +27,9 @@ export const channelMultiSiteSuccess: ChannelSuccessResult = {
 export const channelSingleSiteSuccess: ChannelSuccessResult = {
   status: "success",
   result: {
-    "action-hosting-deploy-demo": {
-      site: "action-hosting-deploy-demo",
-      url: "https://action-hosting-deploy-demo--singlesite-test-jl98rmie.web.app",
+    "action-firebase-deploy-demo": {
+      site: "action-firebase-deploy-demo",
+      url: "https://action-firebase-deploy-demo--singlesite-test-jl98rmie.web.app",
       expireTime: "2020-10-27T21:32:57.233344586Z",
     },
   },
@@ -52,8 +52,8 @@ export const liveDeployMultiSiteSuccess: ProductionSuccessResult = {
   status: "success",
   result: {
     hosting: [
-      "sites/action-hosting-deploy-demo/versions/cd71a5c43ba0921b",
-      "sites/action-hosting-deploy-demo-2/versions/e843c071a09cecbf",
+      "sites/action-firebase-deploy-demo/versions/cd71a5c43ba0921b",
+      "sites/action-firebase-deploy-demo-2/versions/e843c071a09cecbf",
     ],
   },
 };

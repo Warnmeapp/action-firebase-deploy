@@ -11,7 +11,7 @@ assignees: ""
 <!-- Provide relevant yml config that can be used to reproduce this issue. Example:
 
 ```
-- uses: Warnmeapp/action-firebase-deploy@v0
+- uses: Warnmeapp/action-firebase-deploy@0.0.1
   with:
     repoToken: "${{ secrets.GITHUB_TOKEN }}"
     firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"

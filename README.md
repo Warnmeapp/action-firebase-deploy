@@ -46,7 +46,7 @@ jobs:
       - uses: actions/checkout@v4
       # Add any build steps here. For example:
       # - run: npm ci && npm run build
-      - uses: Warnmeapp/action-firebase-deploy@v0
+      - uses: Warnmeapp/action-firebase-deploy@0.0.1
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
@@ -76,7 +76,7 @@ jobs:
       - uses: actions/checkout@v4
       # Add any build steps here. For example:
       # - run: npm ci && npm run build
-      - uses: Warnmeapp/action-firebase-deploy@v0
+      - uses: Warnmeapp/action-firebase-deploy@0.0.1
         with:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           projectId: your-Firebase-project-ID

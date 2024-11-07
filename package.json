@@ -1,8 +1,16 @@
 {
+  "name": "action-firebase-deploy",
+  "version": "0.0.1",
   "private": true,
-  "name": "firebase-hosting-preview-action",
-  "main": "bin/action.min.js",
   "source": "src/index.ts",
+  "main": "bin/action.min.js",
+  "scripts": {
+    "format:check": "prettier . --list-different",
+    "format": "prettier --write .",
+    "build": "microbundle --format cjs --target node --no-compress --no-sourcemap src/index.ts",
+    "build:watch": "microbundle watch --format cjs --target node --no-compress --no-sourcemap src/index.ts",
+    "test": "jest"
+  },
   "devDependencies": {
     "@actions/core": "^1.10.0",
     "@actions/exec": "^1.1.1",
@@ -24,17 +32,9 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
-  "scripts": {
-    "format:check": "prettier . --list-different",
-    "format": "prettier --write .",
-    "build": "microbundle --format cjs --target node --no-compress --no-sourcemap src/index.ts",
-    "build:watch": "microbundle watch --format cjs --target node --no-compress --no-sourcemap src/index.ts",
-    "test": "jest"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && npm run build"
     }
-  },
-  "version": "0.8.0"
+  }
 }
